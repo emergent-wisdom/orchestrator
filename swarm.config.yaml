@@ -1,0 +1,14 @@
+# Emergent Swarm Configuration
+# Override any setting via environment variables (e.g. RATE_LIMIT_MIN=1)
+
+# API rate limiting (seconds between API calls)
+rate_limit_min: 1        # Min seconds between API calls
+rate_limit_max: 2        # Max seconds between API calls
+rate_limit_cooldown: 60  # Cooldown on 429 (seconds)
+
+# Tool call pacing (seconds between consecutive tool calls)
+tool_cooldown_min: 0.5
+tool_cooldown_max: 1.0
+
+# Model (override with MODEL env var)
+model: "gemini-3.1-flash-lite-preview"

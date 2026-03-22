@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emergent-swarm"
+version = "0.1.0"
+description = "A generic multi-agent swarm engine with MCP support for Emergent Wisdom projects"
+authors = [
+    {name = "Henrik Westerberg", email = "henrik.westerberg@emergentwisdom.org"},
+]
+dependencies = [
+    "google-genai>=0.3.0",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest", "black"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
