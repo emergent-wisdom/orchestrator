@@ -57,4 +57,4 @@ ruff format .
 
 ## License
 
-Private / Proprietary - Emergent Wisdom
+MIT
